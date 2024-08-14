@@ -1,7 +1,7 @@
 <template>
-    <div class="event-details">
-      <span class="category">{{ event.category }}</span>
-      <span class="organizer">{{ event.organizer }}</span>
+    <div class="event-details text-right text-base p-5 w-64 cursor-pointer border border-gray-700 mb-2">
+      <span class="block">{{ event.category }}</span>
+      <span class="block">{{ event.organizer }}</span>
     </div>
   </template>
   
@@ -13,7 +13,7 @@
   </script>
   
   <style scoped>
-  .event-details {
+  /* .event-details {
     text-align: right;
     font-size: 16px;
     padding: 20px;
@@ -25,6 +25,6 @@
   
   .category, .organizer {
     display: block;
-  }
+  } */
   </style>
   
