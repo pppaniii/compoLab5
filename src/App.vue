@@ -29,6 +29,7 @@ if (route.query.pageSize) {
       <div id="flashMessage" class="animate-fade" v-if="message">
         <h4>{{ message }}</h4>
       </div>
+      <h1>Deploy with Versal</h1>
       <div class="wrapper">
         <nav>
           <nav class="py-6">
