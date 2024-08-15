@@ -23,21 +23,21 @@ const { event } = storeToRefs(store)
     <nav class="flex justify-center space-x-4 py-4">
       <RouterLink
         :to="{ name: 'event-detail-view' }"
-        class="text-blue-500 hover:text-blue-700 font-semibold"
+        class="text-green-600 hover:text-green-800 font-semibold"
       >
-        Details |
+        Details 
       </RouterLink>
       <span>|</span>
       <RouterLink
         :to="{ name: 'event-register-view' }"
-        class="text-blue-500 hover:text-blue-700 font-semibold"
+        class="text-green-600 hover:text-green-800 font-semibold"
       >
-        Register |
+        Register 
       </RouterLink>
       <span>|</span>
       <RouterLink
         :to="{ name: 'event-edit-view' }"
-        class="text-blue-500 hover:text-blue-700 font-semibold"
+        class="text-green-600 hover:text-green-800 font-semibold"
       >
         Edit
       </RouterLink>
