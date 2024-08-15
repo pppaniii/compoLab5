@@ -39,11 +39,22 @@ if (route.query.pageSize) {
             <RouterLink class="font-bold text-gray-700" exact-active-class="text-green-500" :to="{ name: 'Student'}">Student</RouterLink>
           </nav>
         </nav>
-        <div>
-          <label for="page-size">Event per page</label>
+        <!-- Page size selection -->
+        <div class="mt-4">
+          <label class="mr-2">Set Page Size: </label>
+        <span v-for="size in [1, 2, 3, 4, 5, 6]" :key="size" class="mr-2">
+          <RouterLink
+            class="text-gray-700 hover:text-green-500"
+            exact-active-class="text-green-500"
+            :to="{ name: 'event-list-view', query: { ...route.query, pageSize: size } }"
+          >
+            {{ size }}
+          </RouterLink>
+        </span>
+          <!-- <label for="page-size">Event per page</label>
           <select id="page-size" v-model="pageSize" @change="updatePageSize">
             <option v-for="size in pageSizes" :key="size" :value="size">{{ size }}</option>
-          </select>
+          </select> -->
         </div>
       </div>
     </header>
